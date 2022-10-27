@@ -7,3 +7,5 @@
 >Bug reports exported from Jira,
 
 >test reports
+
+>Postman - verify respond status, time status
