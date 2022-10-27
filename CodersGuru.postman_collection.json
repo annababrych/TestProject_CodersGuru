@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "ed9aebb5-57e1-4fc6-b7f6-0d464de1cdae",
+		"name": "CodersGuru",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"should verify respond status\", () => {\r",
+							"    pm.expect(pm.response.code).to.eql(200)\r",
+							"    \r",
+							"})\r",
+							"\r",
+							"pm.test(\"should verify respond time status\", () =>{\r",
+							"    pm.expect(pm.response.responseTime).to.lessThan(700);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{guru}}/",
+					"host": [
+						"{{guru}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{guru}}/",
+					"host": [
+						"{{guru}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "guru",
+			"value": "https://tester.codersguru.pl",
+			"type": "default"
+		}
+	]
+}
