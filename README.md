@@ -1,4 +1,4 @@
-# My first project.
+# My first project. -------- repository in progress
 **My first project for the CodersGuru website ( https://tester.codersguru.pl/ ) includes:**
 >test plan,
 
